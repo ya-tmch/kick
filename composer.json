@@ -1,0 +1,28 @@
+{
+    "name": "ya-tmch/kick",
+    "authors": [
+        {
+            "name": "Artem Novolodskiy",
+            "email": "ya.tmch@ya.ru"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/framework": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "YaTmch\\Kick\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YaTmch\\Kick\\KickServiceProvider"
+            ]
+        }
+    }
+}
