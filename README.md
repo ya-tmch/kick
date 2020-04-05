@@ -10,7 +10,7 @@ docker-compose exec myapp composer require ya-tmch/kick
 
 add to ./routes/web.php:
 
-Route::get('/receive', function (\YaTmch\Kick\Service $service) {
+Route::get('/receive', function (\YaTmch\Kick\Contracts\Service $service) {
     return response($service->receive(), 200);
 });
 
